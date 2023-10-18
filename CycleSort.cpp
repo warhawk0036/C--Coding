@@ -60,7 +60,7 @@ void cycleSort(int arr[], int n)
 	// cout << writes << endl ;
 }
 
-// Driver program to test above function
+
 int main()
 {
 	int arr[] = { 1, 8, 3, 9, 10, 10, 2, 4 };
