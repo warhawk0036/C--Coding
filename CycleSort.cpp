@@ -25,11 +25,11 @@ void cycleSort(int arr[], int n)
 		if (pos == cycle_start)
 			continue;
 
-		// ignore all duplicate elements
+		
 		while (item == arr[pos])
 			pos += 1;
 
-		// put the item to it's right position
+		
 		if (pos != cycle_start) {
 			swap(item, arr[pos]);
 			writes++;
@@ -39,12 +39,12 @@ void cycleSort(int arr[], int n)
 		while (pos != cycle_start) {
 			pos = cycle_start;
 
-			// Find position where we put the element
+			
 			for (int i = cycle_start + 1; i < n; i++)
 				if (arr[i] < item)
 					pos += 1;
 
-			// ignore all duplicate elements
+			
 			while (item == arr[pos])
 				pos += 1;
 
